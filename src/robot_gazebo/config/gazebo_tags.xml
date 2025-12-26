@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<robot>
+    <!-- Gazebo Sim (Jazzy) plugin for ROS2 Control -->
+    <gazebo>
+        <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find robot_gazebo)/config/controllers.yaml</parameters>
+        </plugin>
+        
+        <!-- Native Gazebo Joint State Publisher -->
+        <plugin filename="libgz-sim-joint-state-publisher-system.so" name="gz::sim::systems::JointStatePublisher">
+            <topic>model/my_robot/joint_state</topic>
+        </plugin>
+    </gazebo>
+
+    <ros2_control name="GazeboSimSystem" type="system">
+        <hardware>
+            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+        </hardware>
+
+        <!-- Front Left Module -->
+        <joint name="FLDL">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="FLDR">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="FLSteer">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <!-- Front Right Module -->
+        <joint name="FRDL">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="FRDR">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="FRSteer">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <!-- Back Left Module -->
+        <joint name="BLDL">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="BLDR">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="BLSteer">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+        <!-- Back Right Module -->
+        <joint name="BRDL">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="BRDR">
+            <command_interface name="velocity">
+                <param name="min">-100</param>
+                <param name="max">100</param>
+            </command_interface>
+            <command_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="BRSteer">
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+
+    </ros2_control>
+</robot>

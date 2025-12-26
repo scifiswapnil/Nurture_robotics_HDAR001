@@ -1,0 +1,38 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    robot_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+robot_controller:
+  ros__parameters:
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
+    joints:
+      - FLDL
+      - FLDR
+      - FRDL
+      - FRDR
+      - BLDL
+      - BLDR
+      - BRDL
+      - BRDR
+
+forward_position_controller:
+  ros__parameters:
+    joints:
+      - FLDL
+      - FLDR
+      - FRDL
+      - FRDR
+      - BLDL
+      - BLDR
+      - BRDL
+      - BRDR

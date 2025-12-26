@@ -1,0 +1,682 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/72c389bd5de915c2fe8aa9fd/w/fd737701d5bacab5bf1c8668/e/a981894d1764dab0bd28ba7a -->
+<robot name="robot_description">
+  <!-- Link baseplate -->
+  <link name="baseplate">
+    <inertial>
+      <origin xyz="0.040532 0.000780382 -0.0258869" rpy="0 0 0"/>
+      <mass value="14.9958"/>
+      <inertia ixx="0.845009" ixy="-2.57157e-06" ixz="-0.0414975" iyy="0.831876" iyz="-1.79282e-06" izz="1.62041"/>
+    </inertial>
+    <!-- Part baseplate -->
+    <visual>
+      <origin xyz="-0.0144056 0.000787974 -0.012" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/baseplate.stl"/>
+      </geometry>
+      <material name="baseplate_material">
+        <color rgba="0.960784 0.835294 0.470588 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0144056 0.000787974 -0.012" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/baseplate.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelhor -->
+    <visual>
+      <origin xyz="-0.00440559 0.199163 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+      <material name="spanelhor_material">
+        <color rgba="0.921569 0.8 0.654902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00440559 0.199163 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part armsupportblock -->
+    <visual>
+      <origin xyz="0.227219 0.232413 5.20417e-18" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/armsupportblock.stl"/>
+      </geometry>
+      <material name="armsupportblock_material">
+        <color rgba="0.65098 0.486275 0.0196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.227219 0.232413 5.20417e-18" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/armsupportblock.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelver -->
+    <visual>
+      <origin xyz="-0.319031 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+      <material name="spanelver_material">
+        <color rgba="1 0.756863 0.054902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.319031 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part steeringdrivesupport -->
+    <visual>
+      <origin xyz="0.251849 -0.255712 -0.088" rpy="1.32349e-23 5.29396e-23 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+      <material name="steeringdrivesupport_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.251849 -0.255712 -0.088" rpy="1.32349e-23 5.29396e-23 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelhor_2 -->
+    <visual>
+      <origin xyz="-0.00440559 -0.185587 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+      <material name="spanelhor_2_material">
+        <color rgba="0.921569 0.8 0.654902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00440559 -0.185587 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelver_2 -->
+    <visual>
+      <origin xyz="0.194219 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+      <material name="spanelver_2_material">
+        <color rgba="1 0.756863 0.054902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.194219 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part armsupportblock_2 -->
+    <visual>
+      <origin xyz="0.227219 -0.230837 5.20417e-18" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/armsupportblock.stl"/>
+      </geometry>
+      <material name="armsupportblock_2_material">
+        <color rgba="0.65098 0.486275 0.0196078 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.227219 -0.230837 5.20417e-18" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/armsupportblock.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelver_3 -->
+    <visual>
+      <origin xyz="0.322219 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+      <material name="spanelver_3_material">
+        <color rgba="1 0.756863 0.054902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.322219 0.000737974 -0.062" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part steeringdrivesupport_2 -->
+    <visual>
+      <origin xyz="-0.261406 0.257288 -0.088" rpy="6.12323e-17 1.53458e-30 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+      <material name="steeringdrivesupport_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.261406 0.257288 -0.088" rpy="6.12323e-17 1.53458e-30 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelver_4 -->
+    <visual>
+      <origin xyz="-0.191031 0.000737974 -0.062" rpy="-2.46519e-31 -7.64964e-32 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+      <material name="spanelver_4_material">
+        <color rgba="1 0.756863 0.054902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.191031 0.000737974 -0.062" rpy="-2.46519e-31 -7.64964e-32 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelver.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part steeringdrivesupport_3 -->
+    <visual>
+      <origin xyz="-0.261401 -0.255712 -0.088" rpy="0 3.65492e-33 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+      <material name="steeringdrivesupport_3_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.261401 -0.255712 -0.088" rpy="0 3.65492e-33 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part steeringdrivesupport_4 -->
+    <visual>
+      <origin xyz="0.251844 0.257288 -0.088" rpy="6.12323e-17 -6.61241e-37 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+      <material name="steeringdrivesupport_4_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.251844 0.257288 -0.088" rpy="6.12323e-17 -6.61241e-37 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/steeringdrivesupport.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelhor_3 -->
+    <visual>
+      <origin xyz="-0.00440559 0.327413 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+      <material name="spanelhor_3_material">
+        <color rgba="0.921569 0.8 0.654902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00440559 0.327413 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part spanelhor_4 -->
+    <visual>
+      <origin xyz="-0.00440559 -0.313837 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+      <material name="spanelhor_4_material">
+        <color rgba="0.921569 0.8 0.654902 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00440559 -0.313837 -0.06195" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/spanelhor.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Frame PiperRightArmMount (dummy link + fixed joint) -->
+  <link name="PiperRightArmMount">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="PiperRightArmMount_frame" type="fixed">
+    <origin xyz="0.227219 -0.230837 0.072" rpy="0 -0 -5.81757e-14"/>
+    <parent link="baseplate"/>
+    <child link="PiperRightArmMount"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame PiperLeftArmMount (dummy link + fixed joint) -->
+  <link name="PiperLeftArmMount">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="PiperLeftArmMount_frame" type="fixed">
+    <origin xyz="0.227219 0.232413 0.072" rpy="0 -0 -5.81757e-14"/>
+    <parent link="baseplate"/>
+    <child link="PiperLeftArmMount"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Frame base_link (dummy link + fixed joint) -->
+  <link name="base_link">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-9"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <joint name="base_link_frame" type="fixed">
+    <origin xyz="0 0 0" rpy="0 -0 0"/>
+    <parent link="baseplate"/>
+    <child link="base_link"/>
+    <axis xyz="0 0 0"/>
+  </joint>
+  <!-- Link drivemount -->
+  <link name="drivemount">
+    <inertial>
+      <origin xyz="-2.36788e-08 -7.9659e-08 0.0549101" rpy="0 0 0"/>
+      <mass value="0.75055"/>
+      <inertia ixx="0.00127707" ixy="7.23125e-10" ixz="7.07922e-10" iyy="0.00149132" iyz="-7.53142e-11" izz="0.00089429"/>
+    </inertial>
+    <!-- Part drivemount -->
+    <visual>
+      <origin xyz="0 2.09758e-25 -0.004" rpy="-3.14159 -6.12323e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+      <material name="drivemount_material">
+        <color rgba="0.729412 0.25098 0.105882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 2.09758e-25 -0.004" rpy="-3.14159 -6.12323e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ddsm115 -->
+  <link name="ddsm115">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115 -->
+    <visual>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -3.01588e-33 3.69779e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -3.01588e-33 3.69779e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount to ddsm115 -->
+  <joint name="FLDL" type="continuous">
+    <origin xyz="0 -0.014 0.106" rpy="-1.5708 6.12323e-17 3.7494e-33"/>
+    <parent link="drivemount"/>
+    <child link="ddsm115"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link ddsm115_2 -->
+  <link name="ddsm115_2">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_2 -->
+    <visual>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -5.22453e-33 -6.16298e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_2_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -5.22453e-33 -6.16298e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount to ddsm115_2 -->
+  <joint name="FLDR" type="continuous">
+    <origin xyz="0 0.014 0.106" rpy="-1.5708 -6.12323e-17 -3.14159"/>
+    <parent link="drivemount"/>
+    <child link="ddsm115_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from baseplate to drivemount -->
+  <joint name="FLSteer" type="revolute">
+    <origin xyz="0.251844 0.257288 -0.087" rpy="3.14159 6.16298e-32 8.32888e-25"/>
+    <parent link="baseplate"/>
+    <child link="drivemount"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link drivemount_2 -->
+  <link name="drivemount_2">
+    <inertial>
+      <origin xyz="-2.36788e-08 -7.9659e-08 0.0549101" rpy="0 0 0"/>
+      <mass value="0.75055"/>
+      <inertia ixx="0.00127707" ixy="7.23125e-10" ixz="7.07922e-10" iyy="0.00149132" iyz="-7.53142e-11" izz="0.00089429"/>
+    </inertial>
+    <!-- Part drivemount_2 -->
+    <visual>
+      <origin xyz="-5.55112e-17 1.47124e-17 -0.004" rpy="-3.14159 -6.12323e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+      <material name="drivemount_2_material">
+        <color rgba="0.729412 0.25098 0.105882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 1.47124e-17 -0.004" rpy="-3.14159 -6.12323e-17 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ddsm115_3 -->
+  <link name="ddsm115_3">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_3 -->
+    <visual>
+      <origin xyz="-5.55112e-17 0 -0.01" rpy="1.5708 -2.17095e-27 1.2326e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_3_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 0 -0.01" rpy="1.5708 -2.17095e-27 1.2326e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_2 to ddsm115_3 -->
+  <joint name="BLDL" type="continuous">
+    <origin xyz="0 -0.014 0.106" rpy="-1.5708 6.12323e-17 0"/>
+    <parent link="drivemount_2"/>
+    <child link="ddsm115_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link ddsm115_4 -->
+  <link name="ddsm115_4">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_4 -->
+    <visual>
+      <origin xyz="0 -1.11022e-16 -0.01" rpy="1.5708 -2.16463e-27 6.92879e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_4_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.11022e-16 -0.01" rpy="1.5708 -2.16463e-27 6.92879e-32"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_2 to ddsm115_4 -->
+  <joint name="BLDR" type="continuous">
+    <origin xyz="0 0.014 0.106" rpy="-1.5708 -6.12323e-17 3.14159"/>
+    <parent link="drivemount_2"/>
+    <child link="ddsm115_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from baseplate to drivemount_2 -->
+  <joint name="BLSteer" type="revolute">
+    <origin xyz="-0.261406 0.257288 -0.087" rpy="-3.14159 -3.69779e-32 -4.996e-14"/>
+    <parent link="baseplate"/>
+    <child link="drivemount_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link drivemount_3 -->
+  <link name="drivemount_3">
+    <inertial>
+      <origin xyz="-2.36788e-08 -7.9659e-08 0.0549101" rpy="0 0 0"/>
+      <mass value="0.75055"/>
+      <inertia ixx="0.00127707" ixy="7.23125e-10" ixz="7.07922e-10" iyy="0.00149132" iyz="-7.53142e-11" izz="0.00089429"/>
+    </inertial>
+    <!-- Part drivemount_3 -->
+    <visual>
+      <origin xyz="0 -5.04734e-18 -0.004" rpy="3.14159 -4.03059e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+      <material name="drivemount_3_material">
+        <color rgba="0.729412 0.25098 0.105882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -5.04734e-18 -0.004" rpy="3.14159 -4.03059e-30 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ddsm115_5 -->
+  <link name="ddsm115_5">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_5 -->
+    <visual>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -3.05311e-16 6.93889e-18"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_5_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -3.05311e-16 6.93889e-18"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_3 to ddsm115_5 -->
+  <joint name="BRDL" type="continuous">
+    <origin xyz="-9.4369e-16 -0.014 0.106" rpy="-1.5708 -1.03356e-29 -6.72795e-14"/>
+    <parent link="drivemount_3"/>
+    <child link="ddsm115_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link ddsm115_6 -->
+  <link name="ddsm115_6">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_6 -->
+    <visual>
+      <origin xyz="-5.55112e-17 -1.11022e-16 -0.01" rpy="1.5708 1.80411e-16 -8.46545e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_6_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 -1.11022e-16 -0.01" rpy="1.5708 1.80411e-16 -8.46545e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_3 to ddsm115_6 -->
+  <joint name="BRDR" type="continuous">
+    <origin xyz="9.4369e-16 0.014 0.106" rpy="-1.5708 1.03356e-29 3.14159"/>
+    <parent link="drivemount_3"/>
+    <child link="ddsm115_6"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from baseplate to drivemount_3 -->
+  <joint name="BRSteer" type="revolute">
+    <origin xyz="-0.261401 -0.255712 -0.087" rpy="-3.14159 -3.65492e-33 -6.72795e-14"/>
+    <parent link="baseplate"/>
+    <child link="drivemount_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link drivemount_4 -->
+  <link name="drivemount_4">
+    <inertial>
+      <origin xyz="2.36788e-08 7.9659e-08 0.0549101" rpy="0 0 0"/>
+      <mass value="0.75055"/>
+      <inertia ixx="0.00127707" ixy="7.23125e-10" ixz="-7.07922e-10" iyy="0.00149132" iyz="7.53142e-11" izz="0.00089429"/>
+    </inertial>
+    <!-- Part drivemount_4 -->
+    <visual>
+      <origin xyz="0 1.96017e-17 -0.004" rpy="-3.14159 6.12324e-17 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+      <material name="drivemount_4_material">
+        <color rgba="0.729412 0.25098 0.105882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 1.96017e-17 -0.004" rpy="-3.14159 6.12324e-17 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/drivemount.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ddsm115_7 -->
+  <link name="ddsm115_7">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_7 -->
+    <visual>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -1.71025e-27 -5.51955e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_7_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -1.71025e-27 -5.51955e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_4 to ddsm115_7 -->
+  <joint name="FRDL" type="continuous">
+    <origin xyz="0 -0.014 0.106" rpy="-1.5708 -1.22465e-16 0"/>
+    <parent link="drivemount_4"/>
+    <child link="ddsm115_7"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link ddsm115_8 -->
+  <link name="ddsm115_8">
+    <inertial>
+      <origin xyz="-5.68903e-09 -1.84532e-06 -0.0370814" rpy="0 0 0"/>
+      <mass value="0.828591"/>
+      <inertia ixx="0.000603382" ixy="1.80287e-09" ixz="1.92633e-10" iyy="0.000603401" iyz="5.27591e-08" izz="0.000943594"/>
+    </inertial>
+    <!-- Part ddsm115_8 -->
+    <visual>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -1.72918e-27 7.93051e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+      <material name="ddsm115_8_material">
+        <color rgba="0.282353 0.54902 0.160784 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.01" rpy="1.5708 -1.72918e-27 7.93051e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/assets/ddsm115.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from drivemount_4 to ddsm115_8 -->
+  <joint name="FRDR" type="continuous">
+    <origin xyz="5.55112e-17 0.014 0.106" rpy="-1.5708 1.22465e-16 3.14159"/>
+    <parent link="drivemount_4"/>
+    <child link="ddsm115_8"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from baseplate to drivemount_4 -->
+  <joint name="FRSteer" type="revolute">
+    <origin xyz="0.251849 -0.255712 -0.087" rpy="-3.14159 -5.29396e-23 -5.21805e-14"/>
+    <parent link="baseplate"/>
+    <child link="drivemount_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

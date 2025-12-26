@@ -1,0 +1,9 @@
+{
+    // Onshape URL of the assembly
+    "url": "https://cad.onshape.com/documents/72c389bd5de915c2fe8aa9fd/w/fd737701d5bacab5bf1c8668/e/a981894d1764dab0bd28ba7a",
+    // Output format
+    "output_format": "urdf",
+    "package_name": "robot_description",
+    "draw_frames": true,
+    "ignore_limits": true
+}
