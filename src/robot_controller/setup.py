@@ -13,6 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/config', glob('config/*.yaml')),
+        ('share/' + package_name + '/launch', glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -28,6 +29,12 @@ setup(
     entry_points={
         'console_scripts': [
             'controller_node = robot_controller.controller_node:main',
+            'visualizer_node = robot_controller.visualizer_node:main',
+            'steering_monitor = robot_controller.steering_monitor:main',
+            'gazebo_monitor = robot_controller.gazebo_monitor:main',
+            'diff_swerve_node = robot_controller.diff_swerve_node:main',
+            'simple_swerve_controller = robot_controller.simple_swerve_node:main',
+            'swerve_visualizer = robot_controller.swerve_visualizer:main',
         ],
     },
 )

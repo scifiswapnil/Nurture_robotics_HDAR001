@@ -72,12 +72,27 @@ def test_optimization_flip():
 
     # Current angle 0. Target angle PI. Should stay 0 and flip speed.
     speed, angle = k.optimize_with_current_state(1.0, math.pi, 0.0)
+    # Normalized diff is pi. abs(diff) > pi/2 is true. 
+    # diff becomes 0.
+    # angle = 0 + 0 = 0.
     assert math.isclose(angle, 0.0, abs_tol=1e-5)
     assert math.isclose(speed, -1.0, rel_tol=1e-5)
 
     # Current angle 0. Target PI/2. Should go to PI/2, speed positive.
     speed, angle = k.optimize_with_current_state(1.0, math.pi / 2, 0.0)
     assert math.isclose(angle, math.pi / 2, abs_tol=1e-5)
+    assert math.isclose(speed, 1.0, rel_tol=1e-5)
+
+    # Test winding: Current 720 (4pi). Target 10 deg (0.1745)
+    # 4pi is 2 revolutions. Target is slightly above 0.
+    # Should rotate to approx 0.1745 (wrapped)
+    curr = 4 * math.pi
+    target = 0.1745
+    speed, angle = k.optimize_with_current_state(1.0, target, curr)
+    
+    # Expected angle is the target itself because 4pi + 0.1745 wrapped is 0.1745
+    expected_angle = 0.1745
+    assert math.isclose(angle, expected_angle, abs_tol=1e-5)
     assert math.isclose(speed, 1.0, rel_tol=1e-5)
 
 

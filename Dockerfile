@@ -27,6 +27,8 @@ RUN apt update && apt install -y \
     ros-jazzy-joint-state-publisher* \
     ros-jazzy-om* \
     ros-jazzy-gz-ros2-control \
+    ros-jazzy-teleop-t* \
+    ros-jazzy-twist* \
     net-tools gedit \
- && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/*
 

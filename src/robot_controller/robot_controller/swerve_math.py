@@ -116,33 +116,35 @@ class SwerveKinematics:
         Optimize based on current angle.
 
         Finds the closest equivalent angle (can reverse speed).
+        This implementation minimizes total rotation (handling winding).
         """
         if not self.continuous:
             return target_speed, self._clamp_angle(target_angle)
 
-        # Normalize angles to -pi to pi
-        target_angle = self._normalize_angle(target_angle)
-        current_angle = self._normalize_angle(current_angle)
-
+        # Calculate the difference between target and current
         diff = target_angle - current_angle
 
-        # Normalize diff to -pi to pi
-        if diff > math.pi:
-            diff -= 2 * math.pi
-        if diff < -math.pi:
-            diff += 2 * math.pi
+        # Normalize the difference to the range [-pi, pi]
+        # This gives the smallest angle to turn to get to target_angle modulus 2pi
+        diff = (diff + math.pi) % (2 * math.pi) - math.pi
 
-        # If diff is > 90 degrees or < -90 degrees, flip speed and add 180 to angle
+        flipped = False
+        # If the rotation is more than 90 degrees (pi/2), it is closer to
+        # rotate to the "opposite" angle and reverse speed using the flipped logic.
         if abs(diff) > math.pi / 2:
+            # We want to go to the opposite valid angle
+            # The angle difference to the opposite angle is (diff - pi) or (diff + pi)
+            # We adjust diff to be the offset to that opposite angle
+            if diff > 0:
+                diff -= math.pi
+            else:
+                diff += math.pi
+            
+            # Reverse speed
             target_speed = -target_speed
-            target_angle = target_angle + math.pi
-            target_angle = self._normalize_angle(target_angle)
+            flipped = True
 
-        return target_speed, target_angle
-
-    def _normalize_angle(self, angle):
-        while angle > math.pi:
-            angle -= 2 * math.pi
-        while angle < -math.pi:
-            angle += 2 * math.pi
-        return angle
+        # The final target angle is the current angle plus the minimized difference
+        final_angle = current_angle + diff
+        
+        return target_speed, final_angle, flipped

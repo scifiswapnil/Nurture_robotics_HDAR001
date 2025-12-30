@@ -384,7 +384,7 @@
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from baseplate to drivemount -->
-  <joint name="FLSteer" type="revolute">
+  <joint name="FLSteer" type="continuous">
     <origin xyz="0.251844 0.257288 -0.087" rpy="3.14159 6.16298e-32 8.32888e-25"/>
     <parent link="baseplate"/>
     <child link="drivemount"/>
@@ -480,7 +480,7 @@
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from baseplate to drivemount_2 -->
-  <joint name="BLSteer" type="revolute">
+  <joint name="BLSteer" type="continuous">
     <origin xyz="-0.261406 0.257288 -0.087" rpy="-3.14159 -3.69779e-32 -4.996e-14"/>
     <parent link="baseplate"/>
     <child link="drivemount_2"/>
@@ -576,7 +576,7 @@
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from baseplate to drivemount_3 -->
-  <joint name="BRSteer" type="revolute">
+  <joint name="BRSteer" type="continuous">
     <origin xyz="-0.261401 -0.255712 -0.087" rpy="-3.14159 -3.65492e-33 -6.72795e-14"/>
     <parent link="baseplate"/>
     <child link="drivemount_3"/>
@@ -672,7 +672,7 @@
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from baseplate to drivemount_4 -->
-  <joint name="FRSteer" type="revolute">
+  <joint name="FRSteer" type="continuous">
     <origin xyz="0.251849 -0.255712 -0.087" rpy="-3.14159 -5.29396e-23 -5.21805e-14"/>
     <parent link="baseplate"/>
     <child link="drivemount_4"/>

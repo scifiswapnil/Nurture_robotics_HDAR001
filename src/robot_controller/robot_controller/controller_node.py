@@ -40,8 +40,8 @@ class SwerveControllerNode(Node):
         self.steering_pubs = []
 
         for i in range(4):
-            t_pub = self.create_publisher(Float64, f'drive_modules/{i}/throttle', 10)
-            s_pub = self.create_publisher(Float64, f'drive_modules/{i}/steering', 10)
+            t_pub = self.create_publisher(Float64, f'drive_modules/module_{i}/throttle', 10)
+            s_pub = self.create_publisher(Float64, f'drive_modules/module_{i}/steering', 10)
             self.throttle_pubs.append(t_pub)
             self.steering_pubs.append(s_pub)
 
