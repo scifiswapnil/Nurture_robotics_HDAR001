@@ -32,7 +32,7 @@ public:
     // Declare and retrieve parameters
     declare_parameter("port_name", std::string("/dev/ttyUSB0"));
     declare_parameter("node_frequency", 20.0);
-    declare_parameter("config_file", std::string("config.yaml"));
+    declare_parameter("config_file", std::string("/home/robotboy/nuture_robotics/src/ddsm115_driver/config/config.yaml"));
     get_parameter("port_name", port_name_);
     get_parameter("node_frequency", freq_);
     get_parameter("config_file", config_file_);

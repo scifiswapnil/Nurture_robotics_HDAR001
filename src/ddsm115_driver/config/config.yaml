@@ -1,26 +1,26 @@
 Sample config file (motors.yaml):
 joints:
-  - name: front_left_steer
+  - name: motor_one
     id: 1
-    mode: position
-  - name: front_left_drive
+    mode: velocity
+  - name: motor_two
     id: 2
     mode: velocity
-  - name: front_right_steer
+  - name: motor_three
     id: 3
-    mode: position
-  - name: front_right_drive
+    mode: velocity
+  - name: motor_four
     id: 4
     mode: velocity
-  - name: rear_left_steer
+  - name: motor_five
     id: 5
-    mode: position
-  - name: rear_left_drive
+    mode: velocity
+  - name: motor_six
     id: 6
     mode: velocity
-  - name: rear_right_steer
+  - name: motor_seven
     id: 7
-    mode: position
-  - name: rear_right_drive
+    mode: velocity
+  - name: motor_eight
     id: 8
     mode: velocity

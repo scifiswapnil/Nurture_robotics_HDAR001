@@ -35,6 +35,10 @@ setup(
             'diff_swerve_node = robot_controller.diff_swerve_node:main',
             'simple_swerve_controller = robot_controller.simple_swerve_node:main',
             'swerve_visualizer = robot_controller.swerve_visualizer:main',
+            'encoder_publisher = robot_controller.encoder_publisher:main',
+            'combined_controller = robot_controller.combined_controller:main',
+            'cc1 = robot_controller.cc1:main',
+            'velocity_smoother = robot_controller.velocity_smoother:main',
         ],
     },
 )

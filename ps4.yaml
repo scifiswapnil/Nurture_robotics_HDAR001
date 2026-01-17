@@ -1,0 +1,21 @@
+teleop_node:
+  ros__parameters:
+    require_enable_button: true
+    enable_button: 1          # <-- CHANGE this to your R1 index from Step 4
+
+    axis_linear:
+      x: 1                    # <-- CHANGE to left stick up/down axis index
+      y: 0                    # <-- CHANGE to left stick left/right axis index
+
+    axis_angular:
+      yaw: 3                  # <-- CHANGE to right stick left/right axis index
+
+    scale_linear:
+      x: 0.8
+      y: 0.8
+    scale_angular:
+      yaw: 2.0
+
+    # If any axis is inverted, use negative scale (most common: x becomes inverted)
+    # Example: scale_linear.x: -0.8
+

@@ -2,6 +2,7 @@ FROM osrf/ros:jazzy-desktop-full
 
 RUN apt update && apt install -y \
     ros-jazzy-ros2-control* \
+    python3-pip \
     ros-jazzy-gz* \
     ros-jazzy-moveit-common \
     ros-jazzy-moveit-configs-utils \
@@ -21,8 +22,6 @@ RUN apt update && apt install -y \
     ros-jazzy-moveit-planners-stomp \
     ros-jazzy-moveit-planners-stomp-dbgsym \
     ros-jazzy-moveit-plugins \
-    ros-jazzy-moveit-py \
-    ros-jazzy-moveit-py-dbgsym \
     ros-jazzy-moveit-resources \
     ros-jazzy-joint-state-publisher* \
     ros-jazzy-om* \
@@ -30,5 +29,32 @@ RUN apt update && apt install -y \
     ros-jazzy-teleop-t* \
     ros-jazzy-twist* \
     net-tools gedit \
+    ros-jazzy-moveit \
+    ros-jazzy-moveit-planners-ompl \
+    ros-jazzy-moveit-setup-assistant \
+    ros-jazzy-moveit-servo \
+    ros-jazzy-moveit-ros-trajectory-cache \
+    ros-jazzy-moveit-task-constructor-core \
+    ros-jazzy-moveit-visual-tools \
+    ros-jazzy-warehouse-ros-sqlite \
+    ros-jazzy-ros-testing \
+    ros-jazzy-realsense* \
+    bash-completion \
+    wget \
+    can-utils \ 
+    ethtool \
+    iproute2 \
+    ros-jazzy-micro-ros-msgs \
+    ros-jazzy-launch-pytest \
+    python3-geopy \
+    socat \
+    ros-jazzy-geographic-msgs \
+    ros-jazzy-ament-black \
+    python3-serial \
+    openjdk-11-jdk-headless \
+    python3-pip \
+    python3-empy \
+    python3-pexpect \
+    python3-future \
     && rm -rf /var/lib/apt/lists/*
 
